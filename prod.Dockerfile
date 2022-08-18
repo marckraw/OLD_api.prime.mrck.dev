@@ -5,13 +5,13 @@ ARG SOURCE_COMMIT=not-set
 
 EXPOSE 3333
 
-LABEL app.hyzone.image.authors=marckraw@icloud.com
-LABEL app.hyzone.image.created=$CREATED_DATE
-LABEL app.hyzone.image.source=$SOURCE_COMMIT
-LABEL app.hyzone.image.version=0.0.1
-LABEL app.hyzone.image.name=hyzone-node-app
-LABEL app.hyzone.image.description="HyZone Node App"
-LABEL app.hyzone.image.type=node
+LABEL dev.mrck.prime.image.authors=marckraw@icloud.com
+LABEL dev.mrck.prime.image.created=$CREATED_DATE
+LABEL dev.mrck.prime.image.source=$SOURCE_COMMIT
+LABEL dev.mrck.prime.image.version=0.0.1
+LABEL dev.mrck.prime.image.name=prime-mrck-dev-node-app
+LABEL dev.mrck.prime.image.description="prime.mrck.dev Node App"
+LABEL dev.mrck.prime.image.type=node
 
 ADD . /app
 RUN cd /app && yarn && yarn build

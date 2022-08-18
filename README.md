@@ -1,14 +1,8 @@
-<p align="center">
-  <a href="https://hyzone.app/" target="blank"><img src="https://hyzone.app/images/hz.png" width="320" alt="Nest Logo" /></a>
-</p>
-
-# Hyzone
+# Prime
 
 ## About
 
 ## Stack
-- Flutter (Dart)
-  - Not created (yet)
 - NextJS (web frontend)
   - Deployment place: Vercel
 - NestJS (backend)

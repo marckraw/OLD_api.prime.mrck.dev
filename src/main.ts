@@ -4,7 +4,7 @@ import { ValidationPipe, VersioningType } from '@nestjs/common';
 import * as morgan from 'morgan'
 import {DocumentBuilder, SwaggerModule} from "@nestjs/swagger";
 
-const corsWhitelist = ['http://localhost:3000', 'https://web.hyzone.app', 'https://hyzone.app'];
+const corsWhitelist = ['http://localhost:3000', 'https://prime.mrck.dev', 'https://mrck.dev'];
 const corsOptions = {
   origin: corsWhitelist,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
@@ -25,10 +25,10 @@ async function bootstrap() {
   );
 
   const config = new DocumentBuilder()
-    .setTitle('Hyzone example')
-    .setDescription('The Hyzone API description')
+    .setTitle('prime.mrck.dev example')
+    .setDescription('The prime.mrck.dev API description')
     .setVersion('0.1')
-    .addTag('hyzone')
+    .addTag('prime.mrck.dev')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);

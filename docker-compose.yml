@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: 123
       POSTGRES_DB: nest
     networks:
-      - hyzone
+      - prime
 
   test-db:
     image: postgres:13
@@ -20,6 +20,6 @@ services:
       POSTGRES_PASSWORD: 123
       POSTGRES_DB: nest
     networks:
-      - hyzone
+      - prime
 networks:
-  hyzone:
+  prime:
